@@ -86,6 +86,13 @@ public class Sanity {
 	}
 	
 	
+	@Test(priority = 4, enabled = true, description = "verify date")
+	public void verifyURL() throws InterruptedException, IOException {	
+		System.out.println("******verify page URL");
+		Assert.assertTrue(main.verifyFilterInLookingField_1());
+	}
+	
+	
 	
 	
 	
