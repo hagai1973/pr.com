@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,6 +115,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.Sanity" class="method navigator-link" hash-for-method="selectAccountTypeLookingTo">selectAccountTypeLookingTo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.Sanity" class="method navigator-link" hash-for-method="verifyURL">verifyURL</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -158,6 +163,15 @@
                   <a name="selectAccountTypeLookingTo">
                   </a> <!-- selectAccountTypeLookingTo -->
                   <span class="method-name">selectAccountTypeLookingTo</span>
+                  <em>
+(verify date)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyURL">
+                  </a> <!-- verifyURL -->
+                  <span class="method-name">verifyURL</span>
                   <em>
 (verify date)                  </em>
                 </div> <!-- method-content -->
@@ -216,24 +230,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'goToRegister')
 data.setCell(0, 2, 'tests.Sanity')
-data.setCell(0, 3, 10433);
+data.setCell(0, 3, 637);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'selectAccountTypeIM')
 data.setCell(1, 2, 'tests.Sanity')
-data.setCell(1, 3, 1146);
+data.setCell(1, 3, 428);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'selectAccountTypeLookingTo')
 data.setCell(2, 2, 'tests.Sanity')
-data.setCell(2, 3, 273);
+data.setCell(2, 3, 194);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyURL')
+data.setCell(3, 2, 'tests.Sanity')
+data.setCell(3, 3, 151);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -266,43 +284,55 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void tests.Sanity.goToRegister() throws java.lang.InterruptedException,java.io.IOException)</span>
-                <span class="method-start">11982 ms</span>
+                <span class="method-start">11284 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">goToRegister</span>
-                <span class="method-start">11996 ms</span>
+                <span class="method-start">11291 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=goToRegister status=SUCCESS method=Sanity.goToRegister()[pri:1, instance:tests.Sani...)</span>
-                <span class="method-start">22436 ms</span>
+                <span class="method-start">11930 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public void tests.Sanity.selectAccountTypeIM() throws java.lang.InterruptedException,java.io.IOExcep...)</span>
-                <span class="method-start">29925 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">selectAccountTypeIM</span>
-                <span class="method-start">29926 ms</span>
+                <span class="method-start">15842 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void tests.Sanity.selectAccountTypeIM() throws java.lang.InterruptedException,java.io.IOExcep...)</span>
+                <span class="method-start">15842 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=selectAccountTypeIM status=SUCCESS method=Sanity.selectAccountTypeIM()[pri:2, insta...)</span>
-                <span class="method-start">31073 ms</span>
+                <span class="method-start">16270 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public void tests.Sanity.selectAccountTypeLookingTo() throws java.lang.InterruptedException,java.io....)</span>
-                <span class="method-start">31528 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">selectAccountTypeLookingTo</span>
-                <span class="method-start">31530 ms</span>
+                <span class="method-start">16640 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void tests.Sanity.selectAccountTypeLookingTo() throws java.lang.InterruptedException,java.io....)</span>
+                <span class="method-start">16640 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=selectAccountTypeLookingTo status=SUCCESS method=Sanity.selectAccountTypeLookingTo(...)</span>
-                <span class="method-start">31803 ms</span>
+                <span class="method-start">16834 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyURL</span>
+                <span class="method-start">17207 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void tests.Sanity.verifyURL() throws java.lang.InterruptedException,java.io.IOException)</span>
+                <span class="method-start">17207 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyURL status=SUCCESS method=Sanity.verifyURL()[pri:4, instance:tests.Sanity@3ce...)</span>
+                <span class="method-start">17358 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">32210 ms</span>
+                <span class="method-start">17704 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
