@@ -12,6 +12,8 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -21,8 +23,13 @@ import org.xml.sax.SAXException;
 
 import com.google.common.io.Files;
 
+import tests.Sanity;
+
 public class Utilities {
 	
+	
+	private static final Logger logger = LogManager.getLogger(Utilities.class);
+
 	
 	public static String getDataFromXML(String fileName, String keyData, int index) throws ParserConfigurationException, SAXException, IOException {
 		//	Locate file			
@@ -74,7 +81,7 @@ public class Utilities {
 				Files.copy(screenshotFile, destFile);
 			}
 			catch(IOException e) {
-				System.out.println("Failed to create image..." + System.getProperty("user.dir") + "\\test-output\\images\\" + timeStamp +".png");
+				logger.fatal("Failed to create image..." + System.getProperty("user.dir") + "\\test-output\\images\\" + timeStamp +".png");
 			}
 			
 			//Send back the pagh of the image
@@ -85,7 +92,7 @@ public class Utilities {
 		
 		// Method for getting WebDriver with get baseURL 
 		public static void tearDown(WebDriver driver) {
-			System.out.println("**********finish test***********");
+			logger.debug("**********finish test***********");
 			driver.quit();
 
 		}

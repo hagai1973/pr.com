@@ -7,11 +7,14 @@ import org.openqa.selenium.WebElement;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 
 public class GetDriver {
 
-	
+	private static final Logger logger = LogManager.getLogger(GetDriver.class);
+
 
 	// Method for getting WebDriver
 	public static WebDriver getDriver(String browser) {
@@ -52,6 +55,11 @@ public class GetDriver {
 				// Initialize web driver
 				driver = new FirefoxDriver();
 			}
+			else {
+				logger.fatal("No browser was found !!!");
+				return null;
+			}
+				
 			
 			//add general wait for elements
 			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);

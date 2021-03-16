@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-13T23:55:06 IST" name="Suite" finished-at="2021-03-13T23:55:24 IST" duration-ms="18704">
+  <suite started-at="2021-03-16T20:20:30 IST" name="Suite" finished-at="2021-03-16T20:21:02 IST" duration-ms="31503">
     <groups>
     </groups>
-    <test started-at="2021-03-13T23:55:06 IST" name="Test" finished-at="2021-03-13T23:55:24 IST" duration-ms="18704">
+    <test started-at="2021-03-16T20:20:30 IST" name="Test" finished-at="2021-03-16T20:21:02 IST" duration-ms="31503">
       <class name="tests.Sanity">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.Sanity@3ce1e309]" started-at="2021-03-13T23:55:06 IST" name="beforeClass" finished-at="2021-03-13T23:55:17 IST" duration-ms="11269" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.Sanity@49c386c8]" started-at="2021-03-16T20:20:30 IST" name="beforeClass" finished-at="2021-03-16T20:20:40 IST" duration-ms="10150" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.Sanity@3ce1e309]" started-at="2021-03-13T23:55:17 IST" name="beforeMethod" finished-at="2021-03-13T23:55:17 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.Sanity@49c386c8]" started-at="2021-03-16T20:20:40 IST" name="beforeMethod" finished-at="2021-03-16T20:20:40 IST" duration-ms="16" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,26 +22,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="goToRegister()[pri:1, instance:tests.Sanity@3ce1e309]" started-at="2021-03-13T23:55:17 IST" name="goToRegister" description="verify date" finished-at="2021-03-13T23:55:18 IST" duration-ms="637" status="PASS">
+        <test-method signature="goToRegister()[pri:1, instance:tests.Sanity@49c386c8]" started-at="2021-03-16T20:20:40 IST" name="goToRegister" description="verify date" finished-at="2021-03-16T20:20:52 IST" duration-ms="12074" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToRegister -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.Sanity@3ce1e309]" started-at="2021-03-13T23:55:18 IST" name="afterMethod" finished-at="2021-03-13T23:55:22 IST" duration-ms="3910" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.Sanity@49c386c8]" started-at="2021-03-16T20:20:52 IST" name="afterMethod" finished-at="2021-03-16T20:20:57 IST" duration-ms="5109" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=goToRegister status=SUCCESS method=Sanity.goToRegister()[pri:1, instance:tests.Sanity@3ce1e309] output={null}]]]>
+                <![CDATA[[TestResult name=goToRegister status=SUCCESS method=Sanity.goToRegister()[pri:1, instance:tests.Sanity@49c386c8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="selectAccountTypeIM()[pri:2, instance:tests.Sanity@3ce1e309]" started-at="2021-03-13T23:55:22 IST" name="selectAccountTypeIM" description="verify date" finished-at="2021-03-13T23:55:22 IST" duration-ms="428" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectAccountTypeIM -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.Sanity@3ce1e309]" started-at="2021-03-13T23:55:22 IST" name="beforeMethod" finished-at="2021-03-13T23:55:22 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.Sanity@49c386c8]" started-at="2021-03-16T20:20:57 IST" name="beforeMethod" finished-at="2021-03-16T20:20:57 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,22 +48,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.Sanity@3ce1e309]" started-at="2021-03-13T23:55:22 IST" name="afterMethod" finished-at="2021-03-13T23:55:22 IST" duration-ms="370" status="PASS">
+        <test-method signature="selectAccountTypeIM()[pri:2, instance:tests.Sanity@49c386c8]" started-at="2021-03-16T20:20:57 IST" name="selectAccountTypeIM" description="verify date" finished-at="2021-03-16T20:20:58 IST" duration-ms="747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectAccountTypeIM -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.Sanity@49c386c8]" started-at="2021-03-16T20:20:58 IST" name="afterMethod" finished-at="2021-03-16T20:20:59 IST" duration-ms="494" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=selectAccountTypeIM status=SUCCESS method=Sanity.selectAccountTypeIM()[pri:2, instance:tests.Sanity@3ce1e309] output={null}]]]>
+                <![CDATA[[TestResult name=selectAccountTypeIM status=SUCCESS method=Sanity.selectAccountTypeIM()[pri:2, instance:tests.Sanity@49c386c8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="selectAccountTypeLookingTo()[pri:3, instance:tests.Sanity@3ce1e309]" started-at="2021-03-13T23:55:22 IST" name="selectAccountTypeLookingTo" description="verify date" finished-at="2021-03-13T23:55:23 IST" duration-ms="194" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectAccountTypeLookingTo -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.Sanity@3ce1e309]" started-at="2021-03-13T23:55:22 IST" name="beforeMethod" finished-at="2021-03-13T23:55:22 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.Sanity@49c386c8]" started-at="2021-03-16T20:20:59 IST" name="beforeMethod" finished-at="2021-03-16T20:20:59 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -78,22 +74,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.Sanity@3ce1e309]" started-at="2021-03-13T23:55:23 IST" name="afterMethod" finished-at="2021-03-13T23:55:23 IST" duration-ms="373" status="PASS">
+        <test-method signature="selectAccountTypeLookingTo()[pri:3, instance:tests.Sanity@49c386c8]" started-at="2021-03-16T20:20:59 IST" name="selectAccountTypeLookingTo" description="verify date" finished-at="2021-03-16T20:20:59 IST" duration-ms="336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectAccountTypeLookingTo -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.Sanity@49c386c8]" started-at="2021-03-16T20:20:59 IST" name="afterMethod" finished-at="2021-03-16T20:20:59 IST" duration-ms="433" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=selectAccountTypeLookingTo status=SUCCESS method=Sanity.selectAccountTypeLookingTo()[pri:3, instance:tests.Sanity@3ce1e309] output={null}]]]>
+                <![CDATA[[TestResult name=selectAccountTypeLookingTo status=SUCCESS method=Sanity.selectAccountTypeLookingTo()[pri:3, instance:tests.Sanity@49c386c8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="verifyURL()[pri:4, instance:tests.Sanity@3ce1e309]" started-at="2021-03-13T23:55:23 IST" name="verifyURL" description="verify date" finished-at="2021-03-13T23:55:23 IST" duration-ms="151" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyURL -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.Sanity@3ce1e309]" started-at="2021-03-13T23:55:23 IST" name="beforeMethod" finished-at="2021-03-13T23:55:23 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.Sanity@49c386c8]" started-at="2021-03-16T20:20:59 IST" name="beforeMethod" finished-at="2021-03-16T20:20:59 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -104,18 +100,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.Sanity@3ce1e309]" started-at="2021-03-13T23:55:23 IST" name="afterMethod" finished-at="2021-03-13T23:55:23 IST" duration-ms="346" status="PASS">
+        <test-method signature="verifyURL()[pri:4, instance:tests.Sanity@49c386c8]" started-at="2021-03-16T20:20:59 IST" name="verifyURL" description="verify date" finished-at="2021-03-16T20:21:00 IST" duration-ms="233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyURL -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.Sanity@49c386c8]" started-at="2021-03-16T20:21:00 IST" name="afterMethod" finished-at="2021-03-16T20:21:00 IST" duration-ms="420" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyURL status=SUCCESS method=Sanity.verifyURL()[pri:4, instance:tests.Sanity@3ce1e309] output={null}]]]>
+                <![CDATA[[TestResult name=verifyURL status=SUCCESS method=Sanity.verifyURL()[pri:4, instance:tests.Sanity@49c386c8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:tests.Sanity@3ce1e309]" started-at="2021-03-13T23:55:23 IST" name="afterClass" finished-at="2021-03-13T23:55:24 IST" duration-ms="985" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:tests.Sanity@49c386c8]" started-at="2021-03-16T20:21:00 IST" name="afterClass" finished-at="2021-03-16T20:21:02 IST" duration-ms="1405" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

@@ -1,121 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="3" total="4" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-13T23:35:04 IST" name="Default suite" finished-at="2021-03-13T23:35:21 IST" duration-ms="16864">
+  <suite started-at="2021-03-16T20:17:02 IST" name="Default suite" finished-at="2021-03-16T20:17:02 IST" duration-ms="505">
     <groups>
     </groups>
-    <test started-at="2021-03-13T23:35:04 IST" name="Default test" finished-at="2021-03-13T23:35:21 IST" duration-ms="16864">
+    <test started-at="2021-03-16T20:17:02 IST" name="Default test" finished-at="2021-03-16T20:17:02 IST" duration-ms="505">
       <class name="tests.Sanity">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.Sanity@1349883]" started-at="2021-03-13T23:35:04 IST" name="beforeClass" finished-at="2021-03-13T23:35:09 IST" duration-ms="5133" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.Sanity@1349883]" started-at="2021-03-16T20:17:02 IST" name="beforeClass" finished-at="2021-03-16T20:17:02 IST" duration-ms="375" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at java.base/java.util.Objects.requireNonNull(Objects.java:208)
+at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:106)
+at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:85)
+at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:45)
+at pages.Base.<init>(Base.java:18)
+at pages.Main.<init>(Main.java:11)
+at tests.Sanity.beforeClass(Sanity.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.Sanity@1349883]" started-at="2021-03-13T23:35:09 IST" name="beforeMethod" finished-at="2021-03-13T23:35:09 IST" duration-ms="8" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.Sanity.goToRegister() throws java.lang.InterruptedException,java.io.IOException]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.Sanity@1349883]" started-at="2021-03-16T20:17:02 IST" name="beforeMethod" finished-at="1970-01-01T02:00:00 IST" duration-ms="-1615918622940" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="goToRegister()[pri:1, instance:tests.Sanity@1349883]" started-at="2021-03-13T23:35:09 IST" name="goToRegister" description="verify date" finished-at="2021-03-13T23:35:14 IST" duration-ms="5014" status="PASS">
+        <test-method signature="goToRegister()[pri:1, instance:tests.Sanity@1349883]" started-at="2021-03-16T20:17:02 IST" name="goToRegister" description="verify date" finished-at="2021-03-16T20:17:02 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at java.base/java.util.Objects.requireNonNull(Objects.java:208)
+at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:106)
+at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:85)
+at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:45)
+at pages.Base.<init>(Base.java:18)
+at pages.Main.<init>(Main.java:11)
+at tests.Sanity.beforeClass(Sanity.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToRegister -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.Sanity@1349883]" started-at="2021-03-13T23:35:14 IST" name="afterMethod" finished-at="2021-03-13T23:35:18 IST" duration-ms="3936" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=goToRegister status=SUCCESS method=Sanity.goToRegister()[pri:1, instance:tests.Sanity@1349883] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.Sanity@1349883]" started-at="2021-03-16T20:17:02 IST" name="afterMethod" finished-at="1970-01-01T02:00:00 IST" duration-ms="-1615918622954" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.Sanity@1349883]" started-at="2021-03-13T23:35:18 IST" name="beforeMethod" finished-at="2021-03-13T23:35:18 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.Sanity.selectAccountTypeIM() throws java.lang.InterruptedException,java.io.IOException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="selectAccountTypeIM()[pri:2, instance:tests.Sanity@1349883]" started-at="2021-03-13T23:35:18 IST" name="selectAccountTypeIM" description="verify date" finished-at="2021-03-13T23:35:19 IST" duration-ms="399" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectAccountTypeIM -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.Sanity@1349883]" started-at="2021-03-13T23:35:19 IST" name="afterMethod" finished-at="2021-03-13T23:35:19 IST" duration-ms="387" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=selectAccountTypeIM status=SUCCESS method=Sanity.selectAccountTypeIM()[pri:2, instance:tests.Sanity@1349883] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="selectAccountTypeLookingTo()[pri:3, instance:tests.Sanity@1349883]" started-at="2021-03-13T23:35:19 IST" name="selectAccountTypeLookingTo" description="verify date" finished-at="2021-03-13T23:35:19 IST" duration-ms="201" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectAccountTypeLookingTo -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.Sanity@1349883]" started-at="2021-03-13T23:35:19 IST" name="beforeMethod" finished-at="2021-03-13T23:35:19 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.Sanity.selectAccountTypeLookingTo() throws java.lang.InterruptedException,java.io.IOException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.Sanity@1349883]" started-at="2021-03-13T23:35:19 IST" name="afterMethod" finished-at="2021-03-13T23:35:20 IST" duration-ms="351" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=selectAccountTypeLookingTo status=SUCCESS method=Sanity.selectAccountTypeLookingTo()[pri:3, instance:tests.Sanity@1349883] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.Sanity@1349883]" started-at="2021-03-13T23:35:20 IST" name="beforeMethod" finished-at="2021-03-13T23:35:20 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.Sanity.verifyURL() throws java.lang.InterruptedException,java.io.IOException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyURL()[pri:4, instance:tests.Sanity@1349883]" started-at="2021-03-13T23:35:20 IST" name="verifyURL" description="verify date" finished-at="2021-03-13T23:35:20 IST" duration-ms="139" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyURL -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.Sanity@1349883]" started-at="2021-03-13T23:35:20 IST" name="afterMethod" finished-at="2021-03-13T23:35:20 IST" duration-ms="354" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyURL status=SUCCESS method=Sanity.verifyURL()[pri:4, instance:tests.Sanity@1349883] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:tests.Sanity@1349883]" started-at="2021-03-13T23:35:20 IST" name="afterClass" finished-at="2021-03-13T23:35:21 IST" duration-ms="877" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:tests.Sanity@1349883]" started-at="2021-03-16T20:17:02 IST" name="afterClass" finished-at="1970-01-01T02:00:00 IST" duration-ms="-1615918622965" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

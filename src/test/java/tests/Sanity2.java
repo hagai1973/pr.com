@@ -18,6 +18,8 @@ import java.lang.reflect.Method;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+//import org.apache.log4j.LogManager;
+//import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -25,7 +27,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 
 
-public class Sanity {
+public class Sanity2 {
 
 	// Global variables
 	// Add extent reports
@@ -39,7 +41,7 @@ public class Sanity {
 	// pages
 	private Main main;
 
-	private static final Logger logger = LogManager.getLogger(Sanity.class);
+	private static final Logger logger = LogManager.getLogger(Sanity2.class);
 	
 	
 
@@ -49,11 +51,11 @@ public class Sanity {
 
 		extent.loadConfig(new File(System.getProperty("user.dir") + "\\resources\\extent-config.xml"));
 		baseUrl = "https://www.payoneer.com/";
-		driver = GetDriver.getDriver("chrome", baseUrl);
+		//driver = GetDriver.getDriver("chrome", baseUrl);
 
-		main = new Main(driver);
+		//main = new Main(driver);
 		//BasicConfigurator.configure();
-		logger.info("Before Class");
+		//logger.info("Before Class");
 
 	}
 
@@ -71,27 +73,19 @@ public class Sanity {
 
 	@Test(priority = 1, enabled = true, description = "verify date")
 	public void goToRegister() throws InterruptedException, IOException {
+		logger.debug("this is a debug " + baseUrl );
 		logger.info("Going to registration page");
-		Assert.assertTrue(main.register());
+//		logger.debug("this is a debug msg");
+//		logger.trace("this is a trace msg");
+//		logger.info("this is a info msg");
+//		logger.warn("this is a warn msg");
+//		logger.error("this is a error msg");
+//		logger.fatal("this is a fatal msg");
+		
+		Assert.assertTrue(true);
 	}
 
-	@Test(priority = 2, enabled = true, description = "verify date")
-	public void selectAccountTypeIM() throws InterruptedException, IOException {
-		logger.info("select account type");
-		Assert.assertTrue(main.selectAccount());
-	}
 
-	@Test(priority = 3, enabled = true, description = "verify date")
-	public void selectAccountTypeLookingTo() throws InterruptedException, IOException {
-		logger.info("verify filter is working");
-		Assert.assertTrue(main.verifyFilterInLookingField_1());
-	}
-
-	@Test(priority = 4, enabled = true, description = "verify date")
-	public void verifyURL() throws InterruptedException, IOException {
-		logger.info("verify page URL");
-		Assert.assertTrue(main.verifyFilterInLookingField_1());
-	}
 
 	@AfterMethod
 	public void afterMethod(ITestResult result) throws IOException {
@@ -102,7 +96,7 @@ public class Sanity {
 			myTest.log(LogStatus.FAIL, myTest.addScreenCapture(Utilities.takeScreenShot(driver)));
 		} else {
 			myTest.log(LogStatus.PASS, result.getName(), "Verify successful ");
-			myTest.log(LogStatus.PASS, myTest.addScreenCapture(Utilities.takeScreenShot(driver)));
+			//myTest.log(LogStatus.PASS, myTest.addScreenCapture(Utilities.takeScreenShot(driver)));
 
 		}
 
@@ -117,7 +111,7 @@ public class Sanity {
 	public void afterClass() {
 		extent.flush();
 		extent.close();
-		driver.quit();
+		//driver.quit();
 
 	}
 

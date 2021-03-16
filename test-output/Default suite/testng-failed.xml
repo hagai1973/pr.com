@@ -5,11 +5,11 @@
     <classes>
       <class name="tests.Sanity">
         <methods>
-          <include name="searchProduct"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
           <include name="afterClass"/>
           <include name="afterMethod"/>
+          <include name="goToRegister"/>
         </methods>
       </class> <!-- tests.Sanity -->
     </classes>
