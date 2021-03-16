@@ -85,7 +85,7 @@
 	<build>
 		<resources>
 			<resource>
-				<directory>src/main/resources</directory>
+				<directory>resources</directory>
 				<targetPath>${basedir}/target</targetPath>
 				<includes>
 					<include>resources/log4j.properties</include>

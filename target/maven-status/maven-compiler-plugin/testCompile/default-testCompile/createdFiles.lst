@@ -1,5 +1,4 @@
 pages\Main.class
-tests\Sanity2.class
 tests\Sanity.class
 utilites\GetDriver.class
 pages\Base.class

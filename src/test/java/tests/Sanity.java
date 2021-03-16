@@ -18,6 +18,7 @@ import java.lang.reflect.Method;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -45,6 +46,7 @@ public class Sanity {
 
 	@BeforeClass
 	public void beforeClass() {
+		PropertyConfigurator.configure(System.getProperty("user.dir") + "/log4j.properties");
 		extent = new ExtentReports(reportPaht);
 
 		extent.loadConfig(new File(System.getProperty("user.dir") + "\\resources\\extent-config.xml"));
